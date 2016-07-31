@@ -22,7 +22,11 @@ layout: default
 <!-- More news -->
 <div class = "container" id="morenews">
 	<div class = "row">
+<<<<<<< HEAD
 		{% for post in site.categories.news limit : 3%}
+=======
+		{% for post in site.categories.news limit : 3 %}
+>>>>>>> origin/gh-pages
 		<div class = "col-md-3">
 		<h3><a href ="{{ post.url }}">{{post.title}}</a></h3>
 		<p>{{post.meta}}</p>
