@@ -1,3 +1,3 @@
 markdown : redcarpet
-baseurl : /Mega-Evolve
+baseurl : megaevolve.com
 exclude : ['README.md']
