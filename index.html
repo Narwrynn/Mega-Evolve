@@ -1,5 +1,41 @@
 ---
 layout: default
 ---
-<h1>Test 3</h1>
 
+
+<!-- News feed -->
+<div class = "container" >
+
+	<div class= "jumbotron"  >
+	{% for post in site.categories.headline limit:1 %}
+	
+	<img src="assets/images/banners/{{post.image}}" >
+	<h1>{{post.title}}</h1>
+	<p>{{post.meta}}</p>
+	<a href="#" class = "btn btn-default">Read</a>
+	<a href="#" class = "btn btn-info">Tweet</a>
+	
+	{% endfor%}
+	
+</div>
+
+<!-- More news -->
+<div class = "container" id="morenews">
+	<div class = "row">
+		{% for post in site.categories.news limit 3%}
+		<div class = "col-md-3">
+		<h3><a href ="#">{{post.title}}</a></h3>
+		<p>{{post.meta}}</p>
+		<a href= "#" class = "btn btn-default">Read</a>
+		</div>
+		{% endfor %}
+		<div class = "col-md-3" >
+		<h3><a href ="#">Read Older Articles</a></h3>
+		<p>Catch up on anything you missed. Find Interviews with pro-players, guides, and more in the Archive.</p>
+		<a href= "#" class = "btn btn-default">Read</a>
+		</div>
+	
+	</div>
+</div>
+
+<!-- Ad here-->
