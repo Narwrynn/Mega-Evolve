@@ -1,8 +1,0 @@
-body{
-margin-bottom: 80px;
-}
-div {
-margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
