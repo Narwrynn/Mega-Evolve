@@ -1,7 +1,3 @@
-<<<<<<< HEAD
 markdown : redcarpet
 exclude : ['README.md']
 baseurl : ""
-=======
-exclude : ['README.md']
->>>>>>> origin/gh-pages
