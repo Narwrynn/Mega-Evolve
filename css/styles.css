@@ -22,3 +22,6 @@ div {
 text-align : center;
 margin : auto;
 }
+
+
+#Pokedex tr { text-align : center; }
