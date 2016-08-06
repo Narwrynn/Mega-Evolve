@@ -16,7 +16,10 @@ div {
 	max-width:600px;
 }
 
-#pokedex {
+
+
+#Pokedex {
 text-align : center;
-margin: auto;
+margin-left: auto;
+margin : auto;
 }
