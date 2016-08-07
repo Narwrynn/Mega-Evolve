@@ -6,7 +6,7 @@ $( document ).ready(function() {
     var html = '';
     
     
-    for(var prop in PokemonScript.Pokemon) 
+    for(var prop in PokedexScript.Pokemon) 
     {       
             currentPokemon = prop;
             html +=
