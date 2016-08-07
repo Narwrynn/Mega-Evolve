@@ -840,7 +840,7 @@ volcanion:{num:721,species:"Volcanion",types:["Fire","Water"],gender:"N",baseSta
 $( document ).ready(function() {
     
     
- $( "#Pokedex tr" ).click(function() {
+ $( "tr" ).click(function() {
   alert( "Handler for .click() called." );});
     
     var currentPokemon;
