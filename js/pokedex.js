@@ -32,7 +32,7 @@ $("#Pokedex").on('click','tr',function(e){
     e.preventDefault();
     pokemonRow = $(this).attr('value');
      html2=
-    '<div class="modal-dialog" id="PokedexModalDialog">  
+        '<div class="modal-dialog" id="PokedexModalDialog">  
             <div class="modal-content">
                 <div class="modal-header">
                     <a href="#"><h3>' + Pokemon[pokemonRow].species + '</h3></a>
