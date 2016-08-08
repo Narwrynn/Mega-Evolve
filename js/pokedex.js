@@ -32,8 +32,7 @@ $("#Pokedex").on('click','tr',function(e){
     pokemonRow = $(this).attr('value');
     $("#PokedexModal").append
 
-    ("
-     <div class='modal-dialog' id='PokedexModalDialog'>  
+    ("<div class='modal-dialog' id='PokedexModalDialog'>  
             <div class='modal-content'>
                 <div class='modal-header'>
                     <a href='#'><h3>" + Pokemon[pokemonRow].species + "</h3></a>
@@ -52,8 +51,7 @@ $("#Pokedex").on('click','tr',function(e){
                 <a class='btn btn-default' data-dismiss ='modal'>
                                 Close
                 </a>
-            </div>
-");
+            </div>");
     
 
 }); 
