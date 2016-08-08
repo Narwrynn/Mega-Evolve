@@ -27,7 +27,7 @@ $( document ).ready(function() {
 $('#Pokedex tr').first().after(html);
 
 var pokemonRow;
-$(".table").on('click','tr',function(e){
+$("#Pokedex").on('click','tr',function(e){
     e.preventDefault();
     pokemonRow = $(this).attr('value');
      alert(pokemonRow);
