@@ -31,27 +31,21 @@ var pokemonRow;
 $("#Pokedex").on('click','tr',function(e){
     e.preventDefault();
     pokemonRow = $(this).attr('value');
-    html2=
-    '<div class="modal-dialog" id="PokedexModalDialog">  
-    <div class="modal-content">
-    <div class="modal-header">
-    <a href="#"><h3>' + Pokemon[pokemonRow].species + '</h3></a>
-    </div>
-    <div class="modal-body">
-    <table>
-    <tr>
-    <th>HP</th><th>Attack</th><th>Defence</th><th>Special<br />Attack</th><th>Special<br />Defence</th><th>Speed</th>
-    </tr>
-    <tr>
-    <td></td><td></td><td></td><td></td><td></td><td></td>
-    </tr>
-    </table>
-    </div>
-    <div class="modal-footer">
-    <a class="btn btn-default" data-dismiss ="modal">Close</a>
-    </div>';
-            
-    $("#PokemonModal").append(html2);
+   $("#PokemonModal").append("<div class='modal-dialog' id='PokedexModalDialog'><div class='modal-content'><div class='modal-header'><a href='#'><h3>" 
+    + Pokemon[pokemonRow].species + 
+    "</h3></a></div><div class='modal-body'><table class='table-striped'><tr><th> HP </th><th> Attack </th><th> Defence </th><th> Special <br /> Attack </th><th> Special <br /> Defence </th><th> Speed </th></tr><tr><td>"
+	+Pokemon[pokemonRow].baseStats.hp+
+	"</td><td>"
+	+Pokemon[pokemonRow].baseStats.atk+
+	"</td><td>"
+	+Pokemon[pokemonRow].baseStats.def+
+	"</td><td>"
+	+Pokemon[pokemonRow].baseStats.spa+
+	"</td><td>"
+	+Pokemon[pokemonRow].baseStats.spd+
+	"</td><td>"
+	+Pokemon[pokemonRow].baseStats.spe+
+	"</td></tr></table></div><div class='modal-footer'><a class='btn btn-default' data-dismiss ='modal'>Close</a></div>");
     
 
 }); 
