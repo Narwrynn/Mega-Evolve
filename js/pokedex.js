@@ -32,7 +32,8 @@ $("#Pokedex").on('click','tr',function(e){
     pokemonRow = $(this).attr('value');
     $("#PokemonModal").append("<div class='modal-dialog' id='PokedexModalDialog'><div class='modal-content'><div class='modal-header'><a href='#'><h3>" 
     + Pokemon[pokemonRow].species + 
-    "</h3></a></div><div class='modal-body'><table class='table-striped'><tr><th> HP </th><th> Attack </th><th> Defence </th><th> Special <br /> Attack </th><th> Special <br /> Defence </th><th> Speed </th></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr></table></div><div class='modal-footer'><a class='btn btn-default' data-dismiss ='modal'>Close</a></div>");
+    "</h3></a></div><div class='modal-body'><table class='table-striped'><tr><th> HP </th><th> Attack </th><th> Defence </th><th> Special <br /> Attack </th><th> Special <br /> Defence </th><th> Speed </th></tr><tr><td>"+
+    Pokemon[pokemonRow].species.hp +"</td><td></td><td></td><td></td><td></td><td></td></tr></table></div><div class='modal-footer'><a class='btn btn-default' data-dismiss ='modal'>Close</a></div>");
     
 
 }); 
