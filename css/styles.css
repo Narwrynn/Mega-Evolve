@@ -18,10 +18,10 @@ div {
 
 
 
-#Pokedex {
+table {
 text-align : center;
 margin : auto;
 }
 
 
-#Pokedex tr { text-align : center; }
+tr { text-align : center; }
