@@ -5,6 +5,7 @@ $( document ).ready(function() {
  
     var currentPokemon;
     var html = '';
+    var html2 = '';
     
     
     for(var prop in Pokemon) 
@@ -30,7 +31,9 @@ var pokemonRow;
 $("#Pokedex").on('click','tr',function(e){
     e.preventDefault();
     pokemonRow = $(this).attr('value');
-    $("#PokemonModal").append('<div class="modal-dialog" id="PokedexModalDialog">  
+    
+    html2+=
+    '<div class="modal-dialog" id="PokedexModalDialog">  
             <div class="modal-content">
                 <div class="modal-header">
                     <a href="#"><h3>' + Pokemon[pokemonRow].species + '</h3></a>
@@ -47,7 +50,9 @@ $("#Pokedex").on('click','tr',function(e){
             </div>
             <div class="modal-footer">
                 <a class="btn btn-default" data-dismiss ="modal">Close</a>
-            </div>');
+            </div>';
+            
+    $("#PokemonModal").append(html2);
     
 
 }); 
