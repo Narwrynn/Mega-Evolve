@@ -34,19 +34,7 @@ $(".table").on('click','tr',function(e){
 
 
    $( "#Pokedex tr" ).click(function() {
-       $("#PokedexModalContent").append("
-       
-        <div class='modal-header'><h3>" + pokemonRow + "</h3>
-                </div>
-                <div class='modal-body'>
-                <p>Testing Text</p>
-                </div>
-                <div class='modal-footer'>
-                <a class='btn btn-default' data-dismiss ='modal'>
-                                Close
-                </a>
-                </div>
- ");
+       alert(pokemonRow);
 });
    
 
