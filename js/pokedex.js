@@ -30,9 +30,7 @@ var pokemonRow;
 $("#Pokedex").on('click','tr',function(e){
     e.preventDefault();
     pokemonRow = $(this).attr('value');
-    $("#PokedexModal").append("<div>
-    
-            </div>");
+    $("#PokedexModal").append("<div></div>");
     
 
 }); 
