@@ -46,9 +46,7 @@ $("#Pokedex").on('click','tr',function(e){
                 </table>
             </div>
             <div class='modal-footer'>
-                <a class='btn btn-default' data-dismiss ='modal'>
-                                Close
-                </a>
+                <a class='btn btn-default' data-dismiss ='modal'>Close</a>
             </div>");
     
 
