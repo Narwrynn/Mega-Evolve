@@ -26,8 +26,27 @@ $( document ).ready(function() {
      }
 $('#Pokedex tr').first().after(html);
 
+var pokemonRow;
+$(".table").on('click','tr',function(e){
+    e.preventDefault();
+    pokemonRow = $(this).attr('value');
+}); 
+
+
    $( "#Pokedex tr" ).click(function() {
-       alert( "Handler for .click() called Test." );
+       $("#PokedexModalContent").append("
+       
+        <div class="modal-header"><h3>" + pokemonRow + "</h3>
+                </div>
+                <div class="modal-body">
+                <p>Testing Text</p>
+                </div>
+                <div class="modal-footer">
+                <a class="btn btn-default" data-dismiss ="modal">
+                                Close
+                </a>
+                </div>
+ ");
 });
    
 
