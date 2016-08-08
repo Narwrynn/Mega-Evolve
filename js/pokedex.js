@@ -30,12 +30,8 @@ var pokemonRow;
 $(".table").on('click','tr',function(e){
     e.preventDefault();
     pokemonRow = $(this).attr('value');
+     alert(pokemonRow);
 }); 
-
-
-   $( "#Pokedex tr" ).click(function() {
-       alert(pokemonRow);
-});
    
 
    
