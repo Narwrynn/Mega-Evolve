@@ -26,7 +26,7 @@ $( document ).ready(function() {
      }
 $('#Pokedex tr').first().after(html);
 
-   $( "Pokedex tr" ).click(function() {
+   $( "#Pokedex tr" ).click(function() {
        alert( "Handler for .click() called." );
 });
    
