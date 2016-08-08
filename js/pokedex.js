@@ -37,7 +37,7 @@ $("#Pokedex").on('click','tr',function(e){
 
 }); 
  $(document).on('hide.bs.modal','#PokemonModal', function () {
-                $("#PokedexModalDialog").remove;
+                $("#PokedexModalDialog").remove();
 });
 
    
