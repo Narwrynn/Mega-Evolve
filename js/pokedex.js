@@ -33,7 +33,7 @@ $("#Pokedex").on('click','tr',function(e){
     $("#PokemonModal").append('<div class="modal-dialog" id="PokedexModalDialog">  
             <div class="modal-content">
                 <div class="modal-header">
-                    <a href="#"><h3>" + Pokemon[pokemonRow].species + "</h3></a>
+                    <a href="#"><h3>' + Pokemon[pokemonRow].species + '</h3></a>
                 </div>
             <div class="modal-body">
                 <table>
