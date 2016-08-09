@@ -26,7 +26,7 @@ $( document ).ready(function() {
             
      }
 $('#Pokedex tr').first().after(html);
-var x = 1;
+var x = 0;
 var pokemonRow;
 $("#Pokedex").on('click','tr',function(e){
     e.preventDefault();
