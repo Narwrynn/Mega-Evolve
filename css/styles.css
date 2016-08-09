@@ -26,3 +26,5 @@ margin : auto;
 
 tr { text-align : center; }
 th { text-align : center; }
+#PostTitle{text-align : center;}
+#PostContent{text-align : center;}
