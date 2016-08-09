@@ -36,7 +36,7 @@ $("#Pokedex").on('click','tr',function(e){
        + Pokemon[pokemonRow].species + 
        "</h3></a></div><div class='modal-body'><h7>Abilities:";
        for(x=0; x < Pokemon[pokemonRow].abilities.length; x++ ){html2+="<p> " + Pokemon[pokemonRow].abilities.[x] + " </p>";}
-       html+= "</h7><table class='table-striped'><tr><th> HP </th><th> Attack </th><th> Defence </th><th> Special <br /> Attack </th><th> Special <br /> Defence </th><th> Speed </th></tr><tr><td>"
+       html2+= "</h7><table class='table-striped'><tr><th> HP </th><th> Attack </th><th> Defence </th><th> Special <br /> Attack </th><th> Special <br /> Defence </th><th> Speed </th></tr><tr><td>"
 	+Pokemon[pokemonRow].baseStats.hp+
 	"</td><td>"
 	+Pokemon[pokemonRow].baseStats.atk+
@@ -55,6 +55,7 @@ $("#Pokedex").on('click','tr',function(e){
                 
                 $(document).on('hide.bs.modal','#PokemonModal', function () {
                 $("#PokedexModalDialog").remove();
+                html2 = '';
 });
 
    
