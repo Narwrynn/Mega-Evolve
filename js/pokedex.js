@@ -32,7 +32,7 @@ $("#Pokedex").on('click','tr',function(e){
     e.preventDefault();
     pokemonRow = $(this).attr('value');
      
-       html2 = "<div class='modal-dialog' id='PokedexModalDialog'><div class='modal-content'><div class='modal-header'><a href='#'><h3>" 
+       html2 += "<div class='modal-dialog' id='PokedexModalDialog'><div class='modal-content'><div class='modal-header'><a href='#'><h3>" 
        + Pokemon[pokemonRow].species + 
        "</h3></a></div><div class='modal-body'><h7>Abilities:";
        for(x=0; x < Pokemon[pokemonRow].abilities.length; x++ ){html2+="<p> " + Pokemon[pokemonRow].abilities.[x] + " </p>";}
