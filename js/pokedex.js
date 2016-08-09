@@ -31,11 +31,12 @@ var pokemonRow;
 $("#Pokedex").on('click','tr',function(e){
     e.preventDefault();
     pokemonRow = $(this).attr('value');
-   $("#PokemonModal").append("<div class='modal-dialog' id='PokedexModalDialog'><div class='modal-content'><div class='modal-header'><a href='#'><h3>" 
+     
+       html2 = "<div class='modal-dialog' id='PokedexModalDialog'><div class='modal-content'><div class='modal-header'><a href='#'><h3>" 
     + Pokemon[pokemonRow].species + 
-    "</h3></a></div><div class='modal-body'><h7>Abilities:</h7>"
-    + for(x=0; x < Pokemon[pokemonRow].abilities.length; x++ ){$("#PokemonModal").append("<p>" + Pokemon[pokemonRow].abilities.[x] + "</p>")}; +
-    "<table class='table-striped'><tr><th> HP </th><th> Attack </th><th> Defence </th><th> Special <br /> Attack </th><th> Special <br /> Defence </th><th> Speed </th></tr><tr><td>"
+       "</h3></a></div><div class='modal-body'><h7>Abilities:</h7>"
+    + for(x=0; x < Pokemon[pokemonRow].abilities.length; x++ ){html2+="<p> " + Pokemon[pokemonRow].abilities.[x] + " </p>";} +
+       "<table class='table-striped'><tr><th> HP </th><th> Attack </th><th> Defence </th><th> Special <br /> Attack </th><th> Special <br /> Defence </th><th> Speed </th></tr><tr><td>"
 	+Pokemon[pokemonRow].baseStats.hp+
 	"</td><td>"
 	+Pokemon[pokemonRow].baseStats.atk+
@@ -48,10 +49,11 @@ $("#Pokedex").on('click','tr',function(e){
 	"</td><td>"
 	+Pokemon[pokemonRow].baseStats.spe+
 	"</td></tr></table></div><div class='modal-footer'><a class='btn btn-default' data-dismiss ='modal'>Close</a></div>");
-    
-
-}); 
- $(document).on('hide.bs.modal','#PokemonModal', function () {
+	$("#PokemonModal").append(html2);
+                
+});
+                
+                $(document).on('hide.bs.modal','#PokemonModal', function () {
                 $("#PokedexModalDialog").remove();
 });
 
