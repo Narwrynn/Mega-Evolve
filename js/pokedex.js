@@ -46,7 +46,7 @@ $("#Pokedex").on('click','tr',function(e){
 	+Pokemon[pokemonRow].baseStats.spd+
 	"</td><td>"
 	+Pokemon[pokemonRow].baseStats.spe+
-	"</td></tr></table></div><div class='modal-footer'><a class='btn btn-default' data-dismiss ='modal'>Close</a></div>");
+	"</td></tr></table></div><div class='modal-footer'><a class='btn btn-default' data-dismiss ='modal'>Close</a></div>";
 	$("#PokemonModal").append(html2)
 });
 		
