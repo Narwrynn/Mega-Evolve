@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: news
 title: "What is a tester?"
 date: 2016-07-26 19:35:16 -0400
 categories: news
