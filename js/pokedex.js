@@ -34,8 +34,8 @@ $("#Pokedex").on('click','tr',function(e){
      
        html2 += "<div class='modal-dialog' id='PokedexModalDialog'><div class='modal-content'><div class='modal-header'><a href='#'><h3>" 
        + Pokemon[pokemonRow].species + 
-       "</h3></a></div><div class='modal-body'><p>Abilities: " + Pokemon[pokemonRow].abilities[0] + " "; 
-       if(Pokemon[pokemonRow].abilities[1] !== undefined){html2 += Pokemon[pokemonRow].abilities[1];}
+       "</h3></a></div><div class='modal-body'><p>Abilities: " + Pokemon[pokemonRow].abilities[0]; 
+       if(Pokemon[pokemonRow].abilities[1] !== undefined){html2 += " & " + Pokemon[pokemonRow].abilities[1];}
 	html2+="<br />Hidden Abilitiy: "
 	+Pokemon[pokemonRow].abilities.H+
 	"</p><table class='table-striped'><tr><th> HP </th><th> Attack </th><th> Defence </th><th> Special <br /> Attack </th><th> Special <br /> Defence </th><th> Speed </th></tr><tr><td>"
