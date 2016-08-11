@@ -43,12 +43,12 @@ $("#Pokedex").on('click','tr',function(e){
        + Pokemon[pokemonRow].weightkg +
        " kg</td></tr><tr><th>Egg groups </th><td> "+Pokemon[pokemonRow].eggGroups[0];
        if(Pokemon[pokemonRow].eggGroups[1] !== undefined){html2 += " & " + Pokemon[pokemonRow].eggGroups[1];}
-       html2 += "</td></tr><tr><th>Abilities<th><td>" + Pokemon[pokemonRow].abilities[0]; 
+       html2 += "</td></tr><tr><th>Abilities</th><td>" + Pokemon[pokemonRow].abilities[0]; 
        if(Pokemon[pokemonRow].abilities[1] !== undefined){html2 += " & " + Pokemon[pokemonRow].abilities[1];}
        html2 += "</td>"
 	if(Pokemon[pokemonRow].abilities.H !== undefined){html2 += "<tr><th>Hidden Abilitiy</th><td>"
 	+Pokemon[pokemonRow].abilities.H + "</td></tr>";}
-	html2+= "<table class='table-striped'><tr><th> HP </th><th> Attack </th><th> Defence </th><th> Special <br /> Attack </th><th> Special <br /> Defence </th><th> Speed </th></tr><tr><td>"
+	html2+= "<table class='table-striped'><tr><th colspan="6">Base Stats</th></tr><tr><th> HP </th><th> Attack </th><th> Defence </th><th> Special <br /> Attack </th><th> Special <br /> Defence </th><th> Speed </th></tr><tr><td>"
 	+Pokemon[pokemonRow].baseStats.hp+
 	"</td><td>"
 	+Pokemon[pokemonRow].baseStats.atk+
