@@ -48,7 +48,7 @@ $("#Pokedex").on('click','tr',function(e){
        html2 += "</td>"
 	if(Pokemon[pokemonRow].abilities.H !== undefined){html2 += "<tr><th>Hidden Abilitiy</th><td>"
 	+Pokemon[pokemonRow].abilities.H + "</td></tr>";}
-	html2+= "<table class='table-striped'><tr><th colspan="6">Base Stats</th></tr><tr><th> HP </th><th> Attack </th><th> Defence </th><th> Special <br /> Attack </th><th> Special <br /> Defence </th><th> Speed </th></tr><tr><td>"
+	html2+= "<table class='table-striped'><tr><th colspan='6'>Base Stats</th></tr><tr><th> HP </th><th> Attack </th><th> Defence </th><th> Special <br /> Attack </th><th> Special <br /> Defence </th><th> Speed </th></tr><tr><td>"
 	+Pokemon[pokemonRow].baseStats.hp+
 	"</td><td>"
 	+Pokemon[pokemonRow].baseStats.atk+
