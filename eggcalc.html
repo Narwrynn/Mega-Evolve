@@ -3,4 +3,75 @@ layout : default
 ---
 
 
-Test! Egg Calc
+<div class = "container" id="NewPage">
+	<table class="table">
+	<tr>
+		<th></th>
+		<th>HP</th>
+		<th>Attack</th>
+		<th>Defence</th>
+		<th>Special Attack</th>
+		<th>Special Defence</th>
+		<th>Speed</th>
+	</tr>
+	<tr>
+	<td>Parent 1</td>
+	<td><input type="checkbox" name="Parent1" value="HP"></td>
+	<td><input type="checkbox" name="Parent1" value="ATK"></td>
+	<td><input type="checkbox" name="Parent1" value="DEF"></td>
+	<td><input type="checkbox" name="Parent1" value="SPA"></td>
+	<td><input type="checkbox" name="Parent1" value="SPD"></td>
+	<td><input type="checkbox" name="Parent1" value="SPE"></td>
+	</tr>
+	<tr>
+	<td>Parent 2</td>
+	<td><input type="checkbox" name="Parent2[]" value="HP"></td>
+	<td><input type="checkbox" name="Parent2[]" value="ATK"></td>
+	<td><input type="checkbox" name="Parent2[]" value="DEF"></td>
+	<td><input type="checkbox" name="Parent2[]" value="SPA"></td>
+	<td><input type="checkbox" name="Parent2[]" value="SPD"></td>
+	<td><input type="checkbox" name="Parent2[]" value="SPE"></td>
+	</tr>
+	<tr>
+	<tr>
+	<td>Desired</td>
+	<td><input type="checkbox" name="Desired[]" value="HP"></td>
+	<td><input type="checkbox" name="Desired[]" value="ATK"></td>
+	<td><input type="checkbox" name="Desired[]" value="DEF"></td>
+	<td><input type="checkbox" name="Desired[]" value="SPA"></td>
+	<td><input type="checkbox" name="Desired[]" value="SPD"></td>
+	<td><input type="checkbox" name="Desired[]" value="SPE"></td>
+	</tr>
+	<tr>
+		<td>Shiny Method</td>
+		<td colspan="2">
+		<select>
+			<option value="1">None (Won't Calculate)</option>
+			<option value="2">Shiny Stone</option>
+			<option value="3">Mesuda</option>
+			<option value="4">Mesuda + Shiny Stone</option>
+		</select>
+		</td>
+		<td>Ability</td>
+		<td>
+		<select>
+			<option value="1">100%</option>
+			<option value="2">70%</option>
+			<option value="3">30%</option>
+		</select>
+		</td>
+		<td>Gender</td>
+		<td>
+		<select>
+			<option value="1">100%</option>
+			<option value="2">75%</option>
+			<option value="3">50%</option>
+			<option value="4">25%</option>
+		</select>
+		</td>
+	</tr>
+	<tr>
+	<td colspan="7"><input type="button" onclick="#" value="Clalculate"></td>
+	</tr>
+	</table>
+</div>
