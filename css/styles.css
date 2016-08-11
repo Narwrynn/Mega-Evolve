@@ -23,7 +23,7 @@ text-align : center;
 margin : auto;
 }
 
-#Pokedex tr {height : 20px;}
+#Pokedex tr {height : 30px;}
 tr { text-align : center; }
 th { text-align : center; }
 #PostTitle{text-align : center;}
