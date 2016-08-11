@@ -37,7 +37,13 @@ $("#Pokedex").on('click','tr',function(e){
        "</h3></a></div><br /><div id='PokemonModalImage'><img src='/assets/images/pokemon/";
        if(Pokemon[pokemonRow].forme !== undefined){html2 += Pokemon[pokemonRow].num +"-"+Pokemon[pokemonRow].formeLetter;}
        	else{html2 += Pokemon[pokemonRow].num;}
-       html2 += ".png'></div><div class='modal-body'><p>Abilities: " + Pokemon[pokemonRow].abilities[0]; 
+       html2 += ".png'></div><div class='modal-body'><table><tr><th>Height</th><td>"
+       + Pokemon[pokemonRow].heightm +
+       " meters</td></tr><tr><th>Weight</th><td>"
+       + Pokemon[pokemonRow].weightkg +
+       " kg</td></tr><tr><th>Egg groups</th><td>"+Pokemon[pokemonRow].eggGroups[0];
+       if(Pokemon[pokemonRow].eggGroups[1] !== undefined){html2 += " & " + Pokemon[pokemonRow].eggGroups[1];}
+       html2 += "</td></tr></table><p>Abilities: " + Pokemon[pokemonRow].abilities[0]; 
        if(Pokemon[pokemonRow].abilities[1] !== undefined){html2 += " & " + Pokemon[pokemonRow].abilities[1];}
 	if(Pokemon[pokemonRow].abilities.H !== undefined){html2 += "<br />Hidden Abilitiy: "
 	+Pokemon[pokemonRow].abilities.H;}
