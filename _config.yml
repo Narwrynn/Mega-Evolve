@@ -1,2 +1,3 @@
 exclude : ['README.md']
-baseurl : ""
+baseurl : "/Mega-Evolve/"
+url: "http://megaevolve.com"
