@@ -10,7 +10,7 @@ $( document ).ready(function() {
     
     for(var prop in Pokemon) 
     { currentPokemon = prop;
-       if(Pokedex[prop].forme == undefined){
+       if(Pokemon[prop].forme == undefined){
             html +=
             '<tr data-toggle="modal" data-target="#PokemonModal" value="' + currentPokemon + '"><td>'
             +Pokemon[prop].num+
