@@ -2,5 +2,5 @@
 layout : pokemon
 categories : pokemon
 title : "Bulbasaur"
-permalink : /pokemon/bulbasaur/
+permalink : megaevolve.com/pokemon/bulbasaur/
 ---
