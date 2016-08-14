@@ -9,8 +9,8 @@ $( document ).ready(function() {
     
     
     for(var prop in Pokemon) 
-    {       
-            currentPokemon = prop;
+    { currentPokemon = prop;
+       if(Pokedex[prop].forme == undefined){
             html +=
             '<tr data-toggle="modal" data-target="#PokemonModal" value="' + currentPokemon + '"><td>'
             +Pokemon[prop].num+
@@ -23,6 +23,7 @@ $( document ).ready(function() {
             '<br />' +Pokemon[prop].types[1];}
             html+=
             '</td></tr>';
+}
             
      }
 $('#Pokedex tr').first().after(html);
