@@ -1,5 +1,6 @@
 ---
 layout : pokemon
 categories : pokemon
-title : Bulbasuar
+title : Bulbasaur
+permalink : /:categories/:title/
 ---
