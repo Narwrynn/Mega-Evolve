@@ -35,10 +35,7 @@ $("#Pokedex").on('click','tr',function(e){
      
        html2 += "<div class='modal-dialog' id='PokedexModalDialog'><div class='modal-content'><div class='modal-header'><a href='#'><h3>" 
        + Pokemon[pokemonRow].species + 
-       "</h3></a></div><br /><a href='#'><img src='/assets/images/pokemon/";
-       if(Pokemon[pokemonRow].forme !== undefined){html2 += Pokemon[pokemonRow].num +"-"+Pokemon[pokemonRow].formeLetter;}
-       	else{html2 += Pokemon[pokemonRow].num;}
-       html2 += ".png' id='PokemonModalImage'></a><div class='modal-body'><table><tr><th>Height</th><td>"
+       "</h3></a></div><br /><a href='#'><img src='/assets/images/pokemon/" + Pokemon[pokemonRow].num + ".png' id='PokemonModalImage'></a><div class='modal-body'><table><tr><th>Height</th><td>"
        + Pokemon[pokemonRow].heightm +
        " meter(s)</td></tr><tr><th>Weight</th><td>"
        + Pokemon[pokemonRow].weightkg +
